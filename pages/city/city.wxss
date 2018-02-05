@@ -1,0 +1,9 @@
+/* pages/city/city.wxss */
+.city-frame {
+  margin-top: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  flex-direction: column;
+}

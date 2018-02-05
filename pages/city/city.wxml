@@ -1,0 +1,5 @@
+<!--pages/city/city.wxml-->
+<view class="city-frame">
+  <view style='margin-bottom:40rpx'>{{cityName}}</view>
+  <image src="{{cityImage}}"></image>
+</view>

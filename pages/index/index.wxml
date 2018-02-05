@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="user-title" wx:if="{{ user.nickName }}">
+  <view>
+    亲爱的{{user.nickName}}
+  </view>
+  <view style="margin-top:30rpx;">
+    你期望的旅程是怎样一种体验
+  </view>
+</view>
+<view  wx:if="{{ user.nickName }}">
+  <view class="flag-frame">
+      <view class="flag-item" wx:for="{{ flag }}" wx:key="{{ index }}">
+          <view data-flag="{{ item.flag }}" data-city="{{ item.city }}" data-image="{{ item.image }}" bindtap='showCity'>{{item.flag}}
+      </view>
+      </view>
+  </view>
+</view>
+<view wx:else>为了更好的体验产品，请提供授权，谢谢</view>
